@@ -1,0 +1,369 @@
+html {
+	box-sizing: border-box;
+}
+
+header{
+	background: #FCEE21;
+	height: 80px;
+}
+
+.floatLeft{
+	float: left !important;
+}
+.floatRight{
+	float: right !important;
+}
+
+.noMargin{
+	margin: 0 !important;
+}
+
+.logo{
+	width: 175px;
+    margin: 10px;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.titel{
+	position: relative;
+	z-index: 1;
+	top: -60px;
+    text-align: center;
+	font-size: 15px;
+	font-family: 'Arial', sans-serif;
+	color: #49394A;
+}
+
+body, nav, ul, li, a{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul{
+	background: #49394A;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li a{
+	color: #f9f9f9;
+	display: block;
+	padding: 0,8;
+	text-decoration: none;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	pading-right: 8px;
+	padding-left: 8px;
+	text-align: center;
+}
+
+nav ul li a:hover{
+		background:rgba(0,0,0, .4);
+}
+
+#section-a .box{
+	padding: 2em;
+	color: #49394A;
+}
+
+ #section-a .box{ 
+	background-color: #f3f290;
+}
+
+.prijs{
+	position: justify;
+	width: 200px;
+}
+
+#section-b .box{
+	padding: 2em;
+	color: #49394A;
+}
+
+#section-b .box{
+	background-color: #fff;
+}
+
+.team{
+	position:center;
+	width: 300px;
+}
+
+figcaption{
+	font-size: 9px;
+}
+
+#section-c .box{
+	padding: 2em;
+	color: #49394A;
+}
+
+#section-c .box{
+	background-color: #f3f290;
+}
+
+#section-c ul li {
+	list-style-type: none;
+	display: inline;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#section-c ul li a{
+	text-decoration: none;
+	color: #49394A;
+}
+
+#section-d .box{
+	padding: 2em;
+	color: #49394A;
+	
+}
+
+#section-d .box{
+	background-color: #fff;
+}
+
+#section-d ul li a{
+	text-decoration: none;
+	color: #49394A;
+}
+
+#section-e .box{
+	padding: 2em;
+}
+
+#section-e .box{
+	background-color: #3b5998;
+}
+
+#section-e .box  li {
+	list-style-type: none;
+	text-align: center;
+}
+
+#section-e .box li a{
+	color: #fff;
+	position: justify;
+}
+
+#section-f .box{
+	padding: 2em;
+}
+
+#section-f .box{
+	background-color: #1da1f2;
+}
+
+#section-f .box  li {
+	list-style-type: none;
+	text-align: center;
+}
+
+#section-f .box li a{
+	color: #fff;
+	position: justify;
+}
+
+#section-g .box{
+	padding: 2em;
+}
+
+#section-g .box{
+	background-color: #0077B5;
+}
+
+#section-g .box  li {
+	list-style-type: none;
+	text-align: center;
+}
+
+#section-g .box li a{
+	color: #fff;
+	position: justify;
+}
+
+#section-h .box{
+	padding: 2em;
+}
+
+#section-h .box{
+	background-color: #C92228;
+}
+
+#section-h .box  li {
+	list-style-type: none;
+	text-align: center;
+}
+
+#section-h .box li a{
+	color: #fff;
+	position: justify;
+}
+
+#main-footer .box{
+	background-color: #49394A;
+	padding: 2em;
+}
+
+#main-footer .box ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+#main-footer .box ul li a{
+	color: #fff;
+	font-size: 12px;
+	position: center;
+}
+
+@media only screen and (min-width:768px){
+	body{ 
+		font-size: 24px;
+	}
+	.team{
+		position:center;
+		width: 500px;
+	}
+	.prijs{
+		width: 350px; 
+	}
+		
+	figcaption{
+		font-size: 12px;
+		width: 500px;
+	}
+	
+	#main-footer .box ul li a{
+		font-size: 20px;
+	}
+	
+	#main-footer .box{
+		padding: 3em;
+	}
+}
+
+@media only screen and (min-width:1366px){
+	nav ul{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul li{
+		flex: 1 0 auto;
+	}
+	
+	.logo{ 
+		width: 250px;
+		margin: 30px;
+	}
+	
+	.titel{
+		top: -80px;
+	}	
+	
+	header{
+		height: 100px;
+	}
+	
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-areas: 
+          "header header"
+          "nav nav"
+          "section-a section-b"
+          "section-c section-d"
+		  "section-e section-e"
+		  "section-f section-f"
+		  "section-g section-g"
+		  "section-h section-h"
+          "footer footer"; 
+	}
+	
+	header{
+		grid-area: header;
+	}
+	
+	.logo{
+		width: 225px;
+		margin: 10px;
+		position: relative;
+		display: block;
+		z-index: 1;
+		right: -20px;
+	}
+	
+	nav{
+		grid-area: nav;
+	}
+	
+	#section-a .box{
+		grid-area: section-a;
+	}
+	
+	#section-b .box{
+		grid-area: section-b;
+	}
+	
+	#section-c .box{
+		grid-area: section-c;
+		background-color: #fff;
+	}
+	
+	#section-d .box{
+		grid-area: section-d;
+		background-color: #f3f290;
+	}
+	
+	#section-e .box{
+		grid-area: section-e;
+	}
+	
+	#section-f .box{
+		grid-area: section-f;
+	}
+	
+	#section-g .box{
+		grid-area: section-g;
+	}
+	
+	#sectoin-h .box{
+		grid-area: section-h;
+	}
+	
+	footer{
+		grid-area: footer;
+	}
+	
+	#main-footer{
+			text-align: center;
+	}
+	
+}
+
+@media only screen and (min-width:1920px){	
+	header{
+		height: 150px;
+	}
+	
+	.logo{
+		width: 300px;
+	}
+	
+	.titel{
+		font-size: 24px;
+		top: -90px;
+	}
+	
+	.team{
+		width: 450px;
+	}
+}
+
+	
+	
